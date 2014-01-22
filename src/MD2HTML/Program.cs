@@ -1,7 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Reflection.Emit;
+using System.Linq;
 using Ninject;
 
 namespace MD2HTML
@@ -10,43 +9,25 @@ namespace MD2HTML
     {
         static void Main(string[] args)
         {
+            if (args == null || args.Count() != 1)
+                return;
 
-            // parse options
+            if (!File.Exists(args[0]))
+            {
+                return;
+            }
 
-            // load the markdown converter
-            IMarkdownConverter markdownConverter = GetMarkdownConverter();
-            
+            // Read in file contents
+            string markdownData = File.ReadAllText(args[0]);
 
-
-#if DEBUG
-            Console.Write("Press any key to continue...");
-            Console.ReadKey();
-#endif
-        }
-
-        private static void ParseArgs(string[] args)
-        {
-            return;
-        }
-
-        private static IMarkdownConverter GetMarkdownConverter()
-        {
+            // load the markdown converter and tranform to html
             IKernel kernel = new StandardKernel();
             kernel.Bind<IMarkdownConverter>().To<MarkdownConverter>();
-            return kernel.Get<IMarkdownConverter>();
-        }
+            var markdownConverter = kernel.Get<IMarkdownConverter>();
+            string htmlData = markdownConverter.Transform(markdownData);
 
-        private static void ProcessFiles(IMarkdownConverter markdownConverter, IEnumerable<string> files)
-        {
-            foreach (var file in files)
-            {
-                // read in .md file
-                String data = File.ReadAllLines(file).ToString();
-                // convert
-                var md = markdownConverter.Transform(data);
-                // write out .html file
-                File.WriteAllText(file, md);
-            }
+            // write out file to html
+            File.WriteAllText(args[0].ToLower().Replace(".md",".html"), htmlData);
         }
     }
 }
