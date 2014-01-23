@@ -1,7 +1,6 @@
-﻿using System;
-using System.IO;
+﻿using System.IO;
 using System.Linq;
-using Ninject;
+using MarkdownSharp;
 
 namespace MD2HTML
 {
@@ -21,9 +20,7 @@ namespace MD2HTML
             string markdownData = File.ReadAllText(args[0]);
 
             // load the markdown converter and tranform to html
-            IKernel kernel = new StandardKernel();
-            kernel.Bind<IMarkdownConverter>().To<MarkdownConverter>();
-            var markdownConverter = kernel.Get<IMarkdownConverter>();
+            IMarkdownConverter markdownConverter = new MarkdownConverter(new Markdown());
             string htmlData = markdownConverter.Transform(markdownData);
 
             // write out file to html
