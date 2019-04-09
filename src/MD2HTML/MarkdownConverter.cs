@@ -14,9 +14,9 @@ namespace MD2HTML
             _markdown = markdown;
         }
 
-        public IMarkdownOptions Options
+        public Markdown Options
         {
-            get { return _markdown.Options; }
+            get { return _markdown; }
         }
 
         public string Version
