@@ -19,6 +19,7 @@ namespace MD2HTML
 
             // Load the markdown converter and tranform to html
             IMarkdownConverter markdownConverter = new MarkdownConverter(new Markdown());
+            markdownConverter.Options.AutoNewLines = true;
             string htmlData = markdownConverter.Transform(markdownData);
 
             // Add custom formatting
