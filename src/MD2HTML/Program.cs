@@ -12,19 +12,20 @@ namespace MD2HTML
                 return;
 
             if (!File.Exists(args[0]))
-            {
                 return;
-            }
 
             // Read in file contents
             string markdownData = File.ReadAllText(args[0]);
 
-            // load the markdown converter and tranform to html
+            // Load the markdown converter and tranform to html
             IMarkdownConverter markdownConverter = new MarkdownConverter(new Markdown());
             string htmlData = markdownConverter.Transform(markdownData);
 
-            // write out file to html
-            File.WriteAllText(args[0].ToLower().Replace(".md",".html"), htmlData);
+            // Add custom formatting
+            htmlData = "<body style='font-family: Arial;'>\n" + htmlData + "</body>";
+
+            // Write out file to html
+            File.WriteAllText(args[0].Replace(".md", ".html"), htmlData);
         }
     }
 }
