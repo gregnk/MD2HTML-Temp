@@ -14,6 +14,7 @@ Copyright
 -----
 
 (c) 2014 Alan Barber
+
 (c) 2019 Gregory Karastergios
 
 Licensed under the Apache License, Version 2.0 (the "License");
