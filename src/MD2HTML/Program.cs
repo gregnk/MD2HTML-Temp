@@ -17,6 +17,7 @@
  *
  * This file has been modified from the original version
  */
+using System;
 using System.IO;
 using System.Linq;
 using MarkdownSharp;
@@ -48,6 +49,11 @@ namespace md2html
 
             // Write out file to html
             File.WriteAllText(args[0].Replace(".md", ".html"), htmlData);
+        }
+
+        private static void PrintUsageInfo()
+        {
+            Console.WriteLine("Usage: md2html <file>.md <options>");
         }
     }
 }
