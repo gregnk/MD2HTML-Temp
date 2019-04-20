@@ -8,6 +8,7 @@ namespace MD2HTML
     {
         static void Main(string[] args)
         {
+            // TODO: Add a header and footer system
             if (args == null || args.Count() != 1)
                 return;
 
@@ -17,7 +18,7 @@ namespace MD2HTML
             // Read in file contents
             string markdownData = File.ReadAllText(args[0]);
 
-            // Load the markdown converter and tranform to html
+            // Load the markdown converter and convert to html
             IMarkdownConverter markdownConverter = new MarkdownConverter(new Markdown());
             markdownConverter.Options.AutoNewLines = true;
             string htmlData = markdownConverter.Transform(markdownData);
