@@ -1,4 +1,4 @@
-MD2HTML
+md2html
 =======
 
 A simple console application that converts Markdown files to HTML
