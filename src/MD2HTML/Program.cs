@@ -1,5 +1,5 @@
 ﻿/* 
- * This file is part of md2html
+ * This file is part of Md2Html
  * (c) 2019 Gregory Karastergios
  * (c) 2014 Alan Barber
  *
@@ -22,7 +22,7 @@ using System.IO;
 using System.Linq;
 using MarkdownSharp;
 
-namespace md2html
+namespace Md2Html
 {
     class Program
     {
@@ -53,7 +53,7 @@ namespace md2html
 
         private static void PrintUsageInfo()
         {
-            Console.WriteLine("Usage: md2html <file>.md <options>");
+            Console.WriteLine("Usage: Md2Html <File>.md <Options>");
         }
     }
 }

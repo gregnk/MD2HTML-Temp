@@ -1,4 +1,4 @@
-md2html
+Md2Html
 =======
 
 A simple console application that converts Markdown files to HTML
@@ -8,7 +8,7 @@ This repository is a fork of [AlanBarber/MD2HTML](https://github.com/AlanBarber/
 Usage
 -----
 
-md2html.exe file.md
+Md2Html.exe file.md
 
 the file.md file will be loaded and converted to a HTML file and saved as file.html.
 

@@ -19,7 +19,7 @@
  */
 using MarkdownSharp;
 
-namespace md2html
+namespace Md2Html
 {
     public interface IMarkdownConverter
     {
