@@ -15,9 +15,9 @@ the file.md file will be loaded and converted to a HTML file and saved as file.h
 Copyright
 -----
 
-(c) 2014 Alan Barber
-
 (c) 2019 Gregory Karastergios
+
+(c) 2014 Alan Barber
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
