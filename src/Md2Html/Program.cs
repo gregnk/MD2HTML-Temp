@@ -28,7 +28,7 @@ namespace Md2Html
     {
         public static void Main(string[] args)
         {
-            if (args == null || args.Count() != 1)
+            if (args == null || args.Count() < 1)
             {
                 PrintUsageInfo();
                 return;
