@@ -6,7 +6,7 @@ This repository is a fork of [AlanBarber/MD2HTML](https://github.com/AlanBarber/
 
 ## Usage
 
-Md2Html.exe <File>.md <Options>
+    Md2Html.exe <File>.md <Options>
 
 ### Options
 
