@@ -10,16 +10,16 @@ Md2Html.exe <File>.md <Options>
 
 ### Options
 
-    -Header   <File>			Adds a header from the file specified`
-    -Footer <File>				Adds a footer from the file specified
-    -AsteriskIntraWordEmphasis	Allows asterisks to be used for intraword emphasis
-    -AutoNewLines				Converts RETURN into a literal newline *
-    -AutoHyperlink				Converts most bare plain URLs into hyperlinks *
-    -CloseEmptyElements			Uses '/>' instead of '>' to close empty HTML elements for XHTML
-    -LinkEmails					Will never convert emails into hyperlinks *
-    -StrictBoldItalic			Requires non-word characters on either side of bold and italic text *
-    -OutFile <File>				Will output the HTML to the specified file
-    -Help						Displays the help screen
+    -Header <File>              Adds a header from the file specified
+    -Footer <File>              Adds a footer from the file specified
+    -AsteriskIntraWordEmphasis  Allows asterisks to be used for intraword emphasis
+    -AutoNewLines               Converts RETURN into a literal newline *
+    -AutoHyperlink              Converts most bare plain URLs into hyperlinks *
+    -CloseEmptyElements         Uses '/>' instead of '>' to close empty HTML elements for XHTML
+    -LinkEmails                 Will never convert emails into hyperlinks *
+    -StrictBoldItalic           Requires non-word characters on either side of bold and italic text *
+    -OutFile <File>             Will output the HTML to the specified file
+    -Help                       Displays the help screen
 
     * Denotes an option that is a significant deviation from the markdown spec
 
