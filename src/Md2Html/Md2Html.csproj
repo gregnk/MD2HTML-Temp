@@ -7,8 +7,8 @@
     <ProjectGuid>{A737F3EF-2A48-4536-9C47-36EBE1D02B02}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Md2html</RootNamespace>
-    <AssemblyName>Md2html</AssemblyName>
+    <RootNamespace>Md2Html</RootNamespace>
+    <AssemblyName>Md2Html</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <IsWebBootstrapper>false</IsWebBootstrapper>
