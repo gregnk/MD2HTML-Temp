@@ -28,7 +28,8 @@ namespace Md2Html
     {
         public static void Main(string[] args)
         {
-            if (args == null || args.Count() < 1)
+            // Usage info
+            if (args == null || args.Count() < 1 || args[0] == "-Help" || args[0] == "-help")
             {
                 PrintUsageInfo();
                 return;
@@ -92,10 +93,6 @@ namespace Md2Html
                     case "-outFile":
                         outFile = args[argIndex + 1];
                         break;
-                    case "-Help":
-                    case "-help":
-                        PrintUsageInfo();
-                        return;
                     default:
                         if (args[argIndex - 1] != "-Header" && args[argIndex - 1] != "-Footer" && args[argIndex - 1] != "-OutFile")
                             Console.WriteLine("ERROR: Invalid option ({0})", args[argIndex]);
