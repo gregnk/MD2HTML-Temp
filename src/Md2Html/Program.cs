@@ -35,7 +35,10 @@ namespace Md2Html
             }
 
             if (!File.Exists(args[0]))
+            {
+                Console.WriteLine("ERROR : Specified file foes not exist ({0})", args[0]);
                 return;
+            }
 
             // Read in file contents
             string markdownData = File.ReadAllText(args[0]);
