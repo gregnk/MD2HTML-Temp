@@ -16,7 +16,7 @@ Md2Html.exe <File>.md <Options>
     -AutoNewLines               Converts RETURN into a literal newline *
     -AutoHyperlink              Converts most bare plain URLs into hyperlinks *
     -CloseEmptyElements         Uses '/>' instead of '>' to close empty HTML elements for XHTML
-    -LinkEmails                 Will never convert emails into hyperlinks *
+    -DontLinkEmails             Will never convert emails into hyperlinks *
     -StrictBoldItalic           Requires non-word characters on either side of bold and italic text *
     -OutFile <File>             Will output the HTML to the specified file
     -Help                       Displays the help screen

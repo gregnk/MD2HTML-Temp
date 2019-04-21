@@ -137,7 +137,7 @@ namespace Md2Html
               "-AutoNewLines\t\t\tConverts RETURN into a literal newline *\n" +
               "-AutoHyperlink\t\t\tConverts most bare plain URLs into hyperlinks *\n" +
               "-CloseEmptyElements\t\tUses '/>' instead of '>' to close empty HTML elements for XHTML\n" +
-              "-LinkEmails\t\t\tWill never convert emails into hyperlinks *\n" +
+              "-DontLinkEmails\t\t\tWill never convert emails into hyperlinks *\n" +
               "-StrictBoldItalic\t\tRequires non-word characters on either side of bold and italic text *\n" +
               "-OutFile <File>\t\t\tWill output the HTML to the specified file\n" +
               "-Help\t\t\t\tDisplays this screen\n" +
