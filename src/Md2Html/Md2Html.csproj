@@ -59,6 +59,9 @@
   <PropertyGroup>
     <SignManifests>false</SignManifests>
   </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="MarkdownSharp, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MarkdownSharp.2.0.5\lib\net40\MarkdownSharp.dll</HintPath>
@@ -110,6 +113,14 @@
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>$(TargetPath) $(SolutionDir)..\LICENSE.md -Header $(SolutionDir)..\html\Header.html -Footer $(SolutionDir)..\html\Footer.html -OutFile $(TargetDir)LICENSE.html -AutoNewLines
+$(TargetPath) $(SolutionDir)..\LICENSES_3RDPARTY.md -Header $(SolutionDir)..\html\Header.html -Footer $(SolutionDir)..\html\Footer.html -OutFile $(TargetDir)LICENSES_3RDPARTY.html -AutoNewLines</PostBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
