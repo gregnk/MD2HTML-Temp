@@ -5,3 +5,5 @@
 * Added MarkdownConverstion options as command line args
 * Added usage info and about screens
 * Added error messages
+* Added header and footer options
+* Added output location option
