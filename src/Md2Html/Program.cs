@@ -121,13 +121,7 @@ namespace Md2Html
 
             // Write out file to html
             if (outFile != null)
-            {
-                // Check if there is a proper file ext when a custom output is specified
-                if (outFile.Split('.').Last() == "html" && outFile.Split('.').Last() == "xhtml" && outFile.Split('.').Last() == "htm")
-                    File.WriteAllText(outFile, htmlData);
-                else
-                    File.WriteAllText(outFile + ".html", htmlData);
-            }
+                File.WriteAllText(outFile + ".html", htmlData);
             else
                 File.WriteAllText(args[0].Replace(".md", ".html"), htmlData);
         }
