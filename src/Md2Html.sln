@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Md2Html", "Md2Html\Md2Html.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0EBC4760-8E85-4AC3-A806-1A9572F54581}"
 	ProjectSection(SolutionItems) = preProject
-		..\LICENSE = ..\LICENSE
+		..\LICENSE.txt = ..\LICENSE.txt
 		..\README.md = ..\README.md
 	EndProjectSection
 EndProject
