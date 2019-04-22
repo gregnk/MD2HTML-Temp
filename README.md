@@ -2,7 +2,7 @@
 
 A simple console application that converts Markdown files to HTML
 
-This repository is a fork of [AlanBarber/MD2HTML](https://github.com/AlanBarber/MD2HTML)
+This project is a fork of [AlanBarber/MD2HTML](https://github.com/AlanBarber/MD2HTML)
 
 ## Usage
 
