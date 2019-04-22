@@ -20,6 +20,7 @@ This repository is a fork of [AlanBarber/MD2HTML](https://github.com/AlanBarber/
     -StrictBoldItalic           Requires non-word characters on either side of bold and italic text *
     -OutFile <File>             Will output the HTML to the specified file
     -Help                       Displays the help screen
+	-About                      Displays the about screen
 
     * Denotes an option that is a significant deviation from the markdown spec
 

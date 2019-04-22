@@ -35,7 +35,15 @@ namespace Md2Html
                 return;
             }
 
-            if (!File.Exists(args[0]))
+            // About
+            else if (args[0] == "-About" || args[0] == "-about")
+            {
+                PrintAboutScreen();
+                return;
+            }
+
+            // File does not exist
+            else if (!File.Exists(args[0]))
             {
                 Console.WriteLine("ERROR : Specified file foes not exist ({0})", args[0]);
                 return;
@@ -102,7 +110,7 @@ namespace Md2Html
 
             string htmlData = markdownConverter.Transform(markdownData);
 
-            // Add header and footer
+            // Add header and footer if specified
             if (header != null && footer != null)
                 htmlData = header + "\n" + htmlData + "\n" + footer;
             else if (header != null && footer == null)
@@ -125,20 +133,15 @@ namespace Md2Html
 
         private static void PrintUsageInfo()
         {
+            Console.Write(Properties.Resources.Usage);
+        }
+
+        private static void PrintAboutScreen()
+        {
             Console.Write(
-              "Usage: Md2Html <File>.md <Options>\n" +
-              "Options:\n\n" + 
-              "-Header <File>\t\t\tAdds a header from the file specified\n" + 
-              "-Footer <File>\t\t\tAdds a footer from the file specified\n" + 
-              "-AsteriskIntraWordEmphasis\tAllows asterisks to be used for intraword emphasis\n" +
-              "-AutoNewLines\t\t\tConverts RETURN into a literal newline *\n" +
-              "-AutoHyperlink\t\t\tConverts most bare plain URLs into hyperlinks *\n" +
-              "-CloseEmptyElements\t\tUses '/>' instead of '>' to close empty HTML elements for XHTML\n" +
-              "-DontLinkEmails\t\t\tWill never convert emails into hyperlinks *\n" +
-              "-StrictBoldItalic\t\tRequires non-word characters on either side of bold and italic text *\n" +
-              "-OutFile <File>\t\t\tWill output the HTML to the specified file\n" +
-              "-Help\t\t\t\tDisplays this screen\n" +
-              "\n* Denotes an option that is a significant deviation from the markdown spec");
+                "Md2Html\n" +
+                "v{0}.{1}.{2}\n\n" +
+                Properties.Resources.License, 1, 0, 0);
         }
     }
 }
