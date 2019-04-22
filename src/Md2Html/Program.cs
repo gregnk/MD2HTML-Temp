@@ -121,7 +121,7 @@ namespace Md2Html
 
             // Write out file to html
             if (outFile != null)
-                File.WriteAllText(outFile + ".html", htmlData);
+                File.WriteAllText(outFile, htmlData);
             else
                 File.WriteAllText(args[0].Replace(".md", ".html"), htmlData);
         }
