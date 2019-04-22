@@ -134,7 +134,8 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-See LICENSES_3RDPARTY for 3rd party licenses.</value>
+See LICENSES_3RDPARTY for 3rd party licenses.
+</value>
   </data>
   <data name="Usage" xml:space="preserve">
     <value>Usage: Md2Html &lt;File&gt;.md &lt;Options&gt;
