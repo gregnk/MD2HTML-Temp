@@ -137,7 +137,7 @@ limitations under the License.
 See LICENSES_3RDPARTY for 3rd party licenses.</value>
   </data>
   <data name="Usage" xml:space="preserve">
-    <value>Usage: Md2Html.exe &lt;File&gt;.md &lt;Options&gt;
+    <value>Usage: Md2Html &lt;File&gt;.md &lt;Options&gt;
 
 Options:
 

@@ -6,7 +6,7 @@ This project is a fork of [AlanBarber/MD2HTML](https://github.com/AlanBarber/MD2
 
 ## Usage
 
-    Md2Html.exe <File>.md <Options>
+    Md2Html <File>.md <Options>
 
 ### Options
 

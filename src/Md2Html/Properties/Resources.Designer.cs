@@ -83,7 +83,7 @@ namespace Md2Html.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Usage: Md2Html.exe &lt;File&gt;.md &lt;Options&gt;
+        ///   Looks up a localized string similar to Usage: Md2Html &lt;File&gt;.md &lt;Options&gt;
         ///
         ///Options:
         ///
@@ -93,7 +93,7 @@ namespace Md2Html.Properties {
         ///-AutoNewLines               Converts RETURN into a literal newline *
         ///-AutoHyperlink              Converts most bare plain URLs into hyperlinks *
         ///-CloseEmptyElements         Uses &apos;/&gt;&apos; instead of &apos;&gt;&apos; to close empty HTML elements for XHTML
-        ///-Don [rest of string was truncated]&quot;;.
+        ///-DontLin [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Usage {
             get {
