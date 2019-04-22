@@ -20,6 +20,7 @@
 using System;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using MarkdownSharp;
 
 namespace Md2Html
@@ -138,10 +139,12 @@ namespace Md2Html
 
         private static void PrintAboutScreen()
         {
+            Version version = Assembly.GetExecutingAssembly().GetName().Version;
             Console.Write(
                 "Md2Html\n" +
                 "v{0}.{1}.{2}\n\n" +
-                Properties.Resources.License, 1, 0, 0);
+                "{3}", 
+                version.Major, version.Minor, version.Revision, Properties.Resources.License);
         }
     }
 }
