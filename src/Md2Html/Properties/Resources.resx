@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="License" xml:space="preserve">
-    <value>(c) 2019 Gregory Karastergios
+    <value>(c) 2019, 2021 Gregory Karastergios
 
 (c) 2014 Alan Barber
 

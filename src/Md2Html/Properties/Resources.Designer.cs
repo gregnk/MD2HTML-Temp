@@ -61,7 +61,7 @@ namespace Md2Html.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to (c) 2019 Gregory Karastergios
+        ///   Looks up a localized string similar to (c) 2019, 2021 Gregory Karastergios
         ///
         ///(c) 2014 Alan Barber
         ///
@@ -74,7 +74,7 @@ namespace Md2Html.Properties {
         ///Unless required by applicable law or agreed to in writing, software
         ///distributed under the License is distributed on an &quot;AS IS&quot; BASIS,
         ///WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-        ///See the License for the s [rest of string was truncated]&quot;;.
+        ///See the License for [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string License {
             get {

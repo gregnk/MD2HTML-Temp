@@ -1,6 +1,6 @@
 ﻿/* 
  * This file is part of Md2Html
- * (c) 2019 Gregory Karastergios
+ * (c) 2019, 2021 Gregory Karastergios
  * (c) 2014 Alan Barber
  *
  * Licensed under the Apache License, Version 2.0 (the "License");

@@ -26,7 +26,7 @@ This project is a fork of [AlanBarber/MD2HTML](https://github.com/AlanBarber/MD2
 
 ## Copyright
 
-(c) 2019 Gregory Karastergios
+(c) 2019, 2021 Gregory Karastergios
 
 (c) 2014 Alan Barber
 
