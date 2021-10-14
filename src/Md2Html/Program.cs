@@ -116,7 +116,7 @@ namespace Md2Html
                 htmlData = header + "\n" + htmlData + "\n" + footer;
             else if (header != null && footer == null)
                 htmlData = header + "\n" + htmlData;
-            else if (header != null && footer == null)
+            else if (header == null && footer != null)
                 htmlData = htmlData + "\n" + footer;
 
             // Write out file to html
